@@ -52,7 +52,7 @@ body{
 
 }
 #head{
-    margin:20% 50% 50% 20%;
+    transform:translate(50% ,50%); 
     font-family: "lobster",cursive;
     text-shadow: 0 0.3rem 0.2rem rgb(19, 17, 17);
 }
