@@ -1,0 +1,58 @@
+body{
+    background:rgb(155, 151, 151);
+}
+
+.controller{
+    height: 440px;
+    width:400px;
+    background: white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top:60px;
+    box-shadow: 10px 10px 10px black;
+}
+#thumbnail{
+    height: 240px;
+    width: 320px;
+    clip-path: circle(40%); 
+    transform: translate(14%,12%);
+    animation:run 4s infinite  paused;
+}
+@keyframes run{
+    0%{
+         transform: translate(14%,12%) rotate(0deg);
+    }
+  
+    100%{
+         transform: translate(14%,12%)  rotate(360deg);
+    }
+}
+#play{
+    font-size: 60px;
+    transform: translate(-109px, 146px);
+}
+#play:hover ,#pause:hover ,#next:hover ,#prev:hover{
+    background:black;
+    color: white;
+    border-radius: 40%;
+  
+}
+#pause{
+    font-size: 60px;
+    transform: translate(121px, 86px);
+}
+#next{
+    font-size: 60px;
+    transform: translate(242px, 86px);
+}
+#prev{
+    font-size: 60px;
+  
+    transform: translate(-95px, 86px);
+
+}
+#head{
+    transform: translate(45%,870%);
+    font-family: "lobster",cursive;
+    text-shadow: 0 0.3rem 0.2rem rgb(19, 17, 17);
+}
