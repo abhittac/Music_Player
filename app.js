@@ -38,10 +38,14 @@ btnNext.addEventListener('click',()=>{
     document.querySelector('audio').setAttribute('src',list[n].path)
     document.querySelector('h1').innerHTML=list[n].title
     document.querySelector('img').setAttribute('src',list[n].pic)
+    document.getElementById('thumbnail').style.animationPlayState="running"
+    music.play()
 })
 btnPrev.addEventListener('click',()=>{
     n--;
     document.querySelector('audio').setAttribute('src',list[n].path)
     document.querySelector('h1').innerHTML=list[n].title
     document.querySelector('img').setAttribute('src',list[n].pic)
+    document.getElementById('thumbnail').style.animationPlayState="running"
+    music.play()
 })
