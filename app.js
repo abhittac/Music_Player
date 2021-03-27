@@ -34,7 +34,7 @@ btnPause.addEventListener('click',()=>{
 })
 
 btnNext.addEventListener('click',()=>{
-    n++;
+    n=(n+1)%list.length;
     document.querySelector('audio').setAttribute('src',list[n].path)
     document.querySelector('h1').innerHTML=list[n].title
     document.querySelector('img').setAttribute('src',list[n].pic)
@@ -42,7 +42,7 @@ btnNext.addEventListener('click',()=>{
     music.play()
 })
 btnPrev.addEventListener('click',()=>{
-    n--;
+    n=(n-1+list.length)%list.length
     document.querySelector('audio').setAttribute('src',list[n].path)
     document.querySelector('h1').innerHTML=list[n].title
     document.querySelector('img').setAttribute('src',list[n].pic)
